@@ -11,15 +11,20 @@
         <p id="description">Please tell me what your favorites are!</p>
         <!--User story 3: create a form-->
         <form id="survey-form">
-            <fieldset>
-                <!--User story 4: enter your name-->
-                <label>Please enter your name:</label><br>
-                <input type="text" id="name" required><br>
-                <label>Please enter your email:</label><br>
-                <input type="email" id="email" required><br>
-                <label>How old are you?:</label><br>
-                <input type="number" id="number" max=150 min=1>
-            </fieldset>
+            <!--User story 4: enter your name-->
+            <label id="name-label">Please enter your name:</label><br>
+            <input type="text" id="name" placeholder="John Doe" required><br><br>
+            <label id="email-label">Please enter your email:</label><br>
+            <input type="email" id="email" placeholder="youremail@gmail.com" required><br><br>
+            <label id="number-label">How old are you?:</label><br>
+            <input type="number" id="number" max=150 min=1 placeholder="Age"><br><br>
+            <label>Who is your favorite Ninja Turtle?</label><br>
+            <select id="dropdown">
+                <option>Raphael</option>
+                <option>Leonardo</option>
+                <option>Donatello</option>
+                <option>Michaelangelo</option>
+            </select>
         </form>
     </body>
 </html>
