@@ -6,25 +6,50 @@
     <body>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <!--User story 1: title with h1-->    
-        <h1 id="title">Favorites</h1>
+        <h1 id="title"><u>Favorites</u></h1>
         <!--User store 2: paragraph with description-->
         <p id="description">Please tell me what your favorites are!</p>
         <!--User story 3: create a form-->
         <form id="survey-form">
             <!--User story 4: enter your name-->
-            <label id="name-label">Please enter your name:</label><br>
-            <input type="text" id="name" placeholder="John Doe" required><br><br>
-            <label id="email-label">Please enter your email:</label><br>
-            <input type="email" id="email" placeholder="youremail@gmail.com" required><br><br>
-            <label id="number-label">How old are you?:</label><br>
-            <input type="number" id="number" max=150 min=1 placeholder="Age"><br><br>
-            <label>Who is your favorite Ninja Turtle?</label><br>
-            <select id="dropdown">
-                <option>Raphael</option>
-                <option>Leonardo</option>
-                <option>Donatello</option>
-                <option>Michaelangelo</option>
-            </select>
+            <div id="demographics">
+                <label id="name-label">Please enter your name:</label><br>
+                <input type="text" id="name" placeholder="John Doe" required><br><br>
+                <label id="email-label">Please enter your email:</label><br>
+                <input type="email" id="email" placeholder="youremail@gmail.com" required><br><br>
+                <label id="number-label">How old are you?:</label><br>
+                <input type="number" id="number" max=150 min=1 placeholder="Age"><br><br>
+            </div>
+            <div id="choices">
+                <label>Who is your favorite Ninja Turtle?</label><br>
+                <select id="dropdown">
+                    <option>Raphael</option>
+                    <option>Leonardo</option>
+                    <option>Donatello</option>
+                    <option>Michaelangelo</option>
+                </select><br><br>
+                <label>Do you prefer Star Wars or Star Trek?</label><br>
+                <input type="radio" name="star" id="starwars" value="starwars">
+                <label for="starwars">Star Wars</label>
+                <input type="radio" name="star" id="startrek" value="startrek">
+                <label for="startrek">Star Trek</label>
+                <input type="radio" name="star" id="neither" value="neither">
+                <label for="neither">Neither</label><br><br>
+                <label>What hobbies do you have?</label><br>
+                <input type="checkbox" id="hobbie1" name="hobbie1" value="Drawing">
+                <label for="hobbie1">Drawing</label>
+                <input type="checkbox" id="hobbie2" name="hobbie2" value="Dancing">
+                <label for="hobbie2">Dancing</label>
+                <input type="checkbox" id="hobbie3" name="hobbie3" value="Coding">
+                <label for="hobbie3">Coding</label>
+                <input type="checkbox" id="hobbie4" name="hobbie4" value="Cooking">
+                <label for="hobbie4">Cooking</label><br><br>
+            </div>
+            <div id="comments">
+                <label>Do you have anything else to share?</label><br>
+                <textarea name="message" rows=20 cols=26></textarea>
+            </div>
+            <input type="submit" id="submit">
         </form>
     </body>
 </html>
