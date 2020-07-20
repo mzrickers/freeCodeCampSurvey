@@ -1,0 +1,7 @@
+body {
+    background-color: yellowgreen;
+}
+
+#title, #description, #survey-form {
+    text-align: center;
+}
